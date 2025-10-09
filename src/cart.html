@@ -7,14 +7,14 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-  <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#F3F6FF]">
+<body class="bg-[#F3F6FF] w-100% px-5">
   <nav class="lg:px-16 md:px-10  flex justify-between items-center py-5 px-8 ">
     <div class=" flex items-center gap-2">
       <img class="w-[50px] h-[50px]" src="./assets/image 5.png" alt="">
-      <p class="font-bold lg:text-[28px] md:text-[20px] text-[20px] font-roboto">BRAND NAME</p>
+      <p class="font-bold lg:text -[28px] md:text-[20px] text-[20px] font-roboto">BRAND NAME</p>
     </div>
     <ul class=" lg:flex md:flex hidden items-center gap-5 ">
       <li class="text-[16px] font-Roboto font-bold cursor-pointer" onclick="navigateTo('home')">HOME</li>
@@ -32,31 +32,30 @@
       <img class=" w-[34px] h-[37px]" src="./assets/Group 225.png" alt="">
     </div>
   </nav>
-  <div class="py-5 lg:mx-[500px] md:mx-60 mx-20">
+  <div class="py-5 text-center">
     <p>homepage/ shopping bag</p>
   </div>
-  <div class="text-[30px] font-bold mx-[500px] ">
-    <h1 class="py-1">SHOPPING</h1>
-    <h1>CART</h1>
+  <div class="text-[30px] font-bold text-center ">
+    <h1 class="py-1">SHOPPING CART</h1>
+    
   </div>
-  <div class="w-[100%] lg:flex md:">
-    <div class="lg:w-[60%] md:100% mx-10 md:py-5" >
-      <div>
-        <div class="flex gap-10">
-         <div>
+  <div class="lg:flex md:flex grid  justify-center ">
+    <div class="lg:w-[50%] md:w-100% mx-10 md:py-5" >
+      <div class="">
+        <div class="flex  ">
            <img src="./assets/Rectangle 83.png" alt="" class="w-[130px] h-[180px]">
-         </div>
-         <div class="flex">
-          <div class="">
+
+         <div class="flex   ">
+          <div>
             <h3 class="font-bold">Checked Duvet Cover Set</h3>
             <h3 class="font-bold">39.99 $</h3>
-            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 py-5">
+            <div class="flex py-5">
               <h3 class="">Art. No.: </h3>
               <h3>54637253 </h3>
               <h3 class="lg:mx-5  "> Size:</h3>
               <h3>21*45</h3>
             </div>
-            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2  ">
+            <div class="flex  gap-5">
              <h3>Color:</h3>
              <h3>Mint </h3>
              <h3 class="lg:mx-5 "> Total:</h3>
@@ -64,25 +63,28 @@
             </div>
             <div class="py-5 flex">
              <img src="./assets/Group 202transparentheart.png" alt="" >
-             <input type="number" placeholder="1" class="w-[77px] h-[31px] border-2 mx-5">
+             <input type="number" placeholder="1" class="w-[77px] h-[31px] border-2 px-3 mx-5">
             </div>
+            
           </div>
- 
-          <div>
+            <div>
             <img src="./assets/Group 230.png" alt="" class="mx-[250px] w-[16.32px] h-[16.32px] cursor-pointer">
           </div>
+ 
+         
         </div>
+       
        </div>
         <!-- second image -->
       <div class="flex gap-10">
-        <div>
+        
           <img src="./assets/Rectangle 96.png" alt="" class="w-[130px] h-[180px]">
-        </div>
+       
         <div class="flex">
          <div class="">
            <h3 class="font-bold">Tasseled Throw</h3>
            <h3 class="font-bold">42.99 $</h3>
-           <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2  py-5">
+           <div class="flex py-5">
              <h3 class="">Art. No.: </h3>
              <h3>54633464 </h3>
              <h3 class="lg:mx-5 "> Size:</h3>
@@ -91,7 +93,7 @@
            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2   ">
             <h3>Color:</h3>
             <h3>Beige </h3>
-            <h3 class="lg:mx-5 "> Total:</h3>
+            <h3 > Total:</h3>
             <h3>342.99</h3>
            </div>
            <div class="py-5 flex">
@@ -100,7 +102,7 @@
              <img src="./assets/Vectorheart.png" alt="" class= "w-[12.43px] h-[11.66px] relative mx-2 my-2 "  >
           
            </div>
-            <input type="number" placeholder="4" class="w-[77px] h-[31px] border-2 mx-5">
+            <input type="number" placeholder="4" class="w-[77px] h-[31px] border-2 px-3 mx-5">
            </div>
         </div>
 
@@ -155,7 +157,7 @@
     <h3>Also You May Buy</h3>
    </div>
    <div id="parentId" class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center mx-10 "></div>
-   <!-- <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center mx-10">
+    <div class="grid lg:grid-cols-3 mt-10  gap-5 md:grid-cols-2 grid-cols-1 items-center mx-10">
     <div>
     <img src="./assets/Rectangle 67 (1).png" alt="">
     <h3 class="font-bold">Ribbed Wool-blend Throw</h3>
@@ -198,7 +200,7 @@
     </div>
    </div>
 
-  </div> -->
+  </div> 
   <!-- footer -->
   <div class="  bg-[#0A032A]  md:h-full lg:h-full ">
     <div class=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center justify-between mx-5  ">
@@ -208,7 +210,7 @@
         <p class="py-3">121 king street, Melbourne 3000</p>
         <p class="py-2">+12 3 0000 0000</p>
         <p class="py-2">contact@brandemail.com</p>
-        <div class="flex gap-20 py-10">
+        <div class="flex gap-10 py-10">
           <img src="./Vectorfacebook.png" class="w-[9.62px] h-[19.87px]" alt="">
           <img src="./assets/ant-design_twitter-outlinedteitter.png" class="w-[19.93px] h-[19.87px]" alt="">
           <img src="./ant-design_instagram-filledig.png" class="w-19.93px] h-[19.87px]" alt="">
@@ -248,12 +250,11 @@
      </div>
 <!-- End note -->
 <div class=" bg-[#050019]">
-<h3 class="text-white h-[52px] lg:mx-[500px] md:mx-20 mx-5 py-3">Brand Registered Name © – All rights reserved </h3>
+<h3 class="text-white h-[52px] text-center py-3">Brand Registered Name © – All rights reserved </h3>
 
 </div>
 <div id="two"></div>
 <script src="./furniture.js"></script>
-
 <script src="./product.js"></script>
 
 </body>
