@@ -3,7 +3,7 @@ function brandInput(){
 }
 function navigateTo(page){
     if (page === "home" ){
-    window.location.href = "/Index.html"
+    window.location.href = "/index.html"
     }
     else if (page === "store"){
         window.location.href = "/brand.html"
