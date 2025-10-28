@@ -37,3 +37,6 @@ const parentItems = parent.map((product) =>`
  </div>`)
  const container = document.getElementById('parentId')
  container.innerHTML = parentItems.join("") 
+
+
+ 
